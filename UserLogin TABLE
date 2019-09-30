@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[UserLogin](
+	[UserLoginId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[FullName] [nvarchar](max) NULL,
+	[Email] [nvarchar](max) NULL,
+	[PhoneNumber] [nvarchar](max) NULL,
+	[UserName] [nvarchar](max) NULL,
+	[Password] [nvarchar](max) NULL,
+	[RFID] [nvarchar](max) NULL,
+	[IsActive] [bit] NOT NULL,
+	[UserType_UserTypeId] [int] NULL FOREIGN KEY REFERENCES UserType(UserTypeId)
+)
