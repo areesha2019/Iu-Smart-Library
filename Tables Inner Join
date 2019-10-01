@@ -1,3 +1,2 @@
-SELECT B.BookId, B.Title, C.Name as 'Category', A.Name as 'Author' FROM Book B 
-INNER JOIN Category C ON B.Category_CategoryId = C.CategoryId
-INNER JOIN Author A ON B.Author_AuthorId = A.AuthorId
+SELECT UL.FullName,UL.Email, UL.UserName, UL.Password, UT.Name as 'User Type' FROM UserLogin UL
+INNER JOIN UserType UT ON UL.UserType_UserTypeId = UT.UserTypeId
