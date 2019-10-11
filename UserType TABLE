@@ -1,5 +1,0 @@
-CREATE TABLE [dbo].[UserType](
-	[UserTypeId] [int] IDENTITY(1,1) PRIMARY KEY NOT NULL,
-	[Name] [nvarchar](max) NULL,
-	[Description] [nvarchar](max) NULL
-	)
