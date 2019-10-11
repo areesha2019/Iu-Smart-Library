@@ -1,2 +1,0 @@
-SELECT UL.FullName,UL.Email, UL.UserName, UL.Password, UT.Name as 'User Type' FROM UserLogin UL
-INNER JOIN UserType UT ON UL.UserType_UserTypeId = UT.UserTypeId
